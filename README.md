@@ -30,4 +30,4 @@ This repo documents my learning journey and hands-on experience with FastAPI —
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/fastapi-codes.git
+   git clone https://github.com/bhushanzade02/FASTAPI-CODES
