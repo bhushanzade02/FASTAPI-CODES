@@ -31,4 +31,3 @@ This repo documents my learning journey and hands-on experience with FastAPI —
 
    ```bash
    git clone https://github.com/your-username/fastapi-codes.git
-   cd fastapi-codes
