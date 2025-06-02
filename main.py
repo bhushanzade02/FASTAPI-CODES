@@ -71,10 +71,23 @@ def sort_patients(sort_by: str = Query(..., description='Sort on the basis of he
     
     data = load_data()
     
-    sort_order =True if order=='desc' else False
+    sort_order =True if order=='desc' else Falser
     
     sorted_data=sorted(data.values(), key=lambda x: x.get(sort_by, 0), reverse=sort_order)
     
     
     return sorted_data
 #/sort?sort_by=bmi&order=desc
+
+
+@app.get("/search")
+def search_patient(name: str = Query(..., description="Search by name")):
+    data = load_data()
+
+    for key in data:
+        if data[key]["name"] == name:
+            return data[key]
+
+    raise HTTPException(status_code=404, detail="Patient not found")
+
+@app.get("/count_bmi")
