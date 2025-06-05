@@ -2,9 +2,7 @@
 # for virtual and creationa and activation commands
 # python -m venv myenv
 # myenv\Scripts\Activate
-# uvicorn main:app --reload
-
-
+# uvicorn main:app --reloa
 
 from fastapi import FastAPI, Path, HTTPException, Query
 from fastapi.responses import JSONResponse
