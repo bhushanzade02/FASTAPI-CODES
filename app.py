@@ -85,6 +85,6 @@ def predict_premium(data: UserInput):
 
 
 
-#update
+
     return JSONResponse(status_code=200, content={'predicted_category': prediction})
 
