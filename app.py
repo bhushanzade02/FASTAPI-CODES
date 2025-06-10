@@ -83,7 +83,7 @@ def predict_premium(data: UserInput):
 
     prediction = model.predict(input_df)[0]
 
-
+#hjhjn
 
 
     return JSONResponse(status_code=200, content={'predicted_category': prediction})
