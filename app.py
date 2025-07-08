@@ -70,6 +70,7 @@ class UserInput(BaseModel):
             return 3
 
 
+
 @app.post('/predict')
 def predict_premium(data: UserInput):
 
